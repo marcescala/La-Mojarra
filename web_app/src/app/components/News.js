@@ -17,14 +17,14 @@ const news = [
 function News() {
   const currentNews = news.concat(news).concat(news).concat(news);
   return (
-    <div class="news">
+    <div className="news">
       {currentNews.map((item, index) =>
-        <div class="news_item">
+        <div className="news_item">
           <div>{item.title}</div>
           <div>{item.description}</div>
           <div>
-          <Link href={item.link}>{item.link}</Link>
-            </div>
+            <Link href={item.link}>{item.link}</Link>
+          </div>
         </div>
       )}
     </div>
