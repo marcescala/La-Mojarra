@@ -19,7 +19,7 @@ function News() {
   return (
     <div className="news">
       {currentNews.map((item, index) =>
-        <div className="news_item">
+        <div className="news_item" key={item.index}>
           <div>{item.title}</div>
           <div>{item.description}</div>
           <div>
