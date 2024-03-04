@@ -28,3 +28,14 @@ body {
   height: 100%;
 }
 
+.news {
+  padding-top: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.news_item {
+  padding-bottom: 30px;
+}
+
+

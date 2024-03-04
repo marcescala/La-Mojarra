@@ -1,6 +1,7 @@
 // import Image from "next/image";
 import HeaderImage from "./components/HeaderImage";
 import HeaderTitle from "./components/HeaderTitle";
+import News from "./components/News";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
      <HeaderTitle />
      <HeaderImage />
      </div>
+     <div><News/></div>
     </main>
   );
 }
