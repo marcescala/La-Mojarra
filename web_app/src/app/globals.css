@@ -1,33 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Garamond', sans-serif; /* Change 'Arial' to your desired font family */
+  color: #0a130e; /* Change the text color as needed */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
 }
+
+.header-title {
+  background-color: #fff; /* Change the background color as needed */
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Add this to make the header a positioned parent */
+}
+
+/* Styles for the full-width image */
+.header-img {
+  position: absolute; /* Add this to position the image within the header */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
